@@ -1,0 +1,8 @@
+@mixin vmin($vmin-property) {
+   height: $vmin-property;
+   width: $vmin-property;
+   max-width: $vmin-property;
+   max-height: $vmin-property;
+   min-width: $vmin-property;
+   min-height: $vmin-property;
+}

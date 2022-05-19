@@ -1,0 +1,88 @@
+@use "../abstracts/" as *;
+
+#header {
+   height: 100vh;
+   width: 100%;
+   background-color: $clr-primary_yellow;
+}
+// NAV BAR
+.nav-bar {
+   width: 100%;
+   height: 8rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1em 10%;
+   font-weight: 400;
+   font-size: 0.8rem;
+   background-color: $clr-primary_yellow;
+
+   .puma-logo {
+      height: auto;
+      width: 3.5rem;
+   }
+
+   .page-links {
+      display: flex;
+      justify-content: space-evenly;
+      flex-grow: 1;
+
+      a {
+         text-decoration: none;
+         color: black;
+      }
+   }
+
+   .web-links {
+      justify-content: space-evenly;
+      display: flex;
+      flex-shrink: 1;
+      width: 11rem;
+
+      .instagram {
+         width: 2rem;
+         height: auto;
+      }
+   }
+}
+
+// HEADER MAIN CONTENT
+
+.main {
+   position: relative;
+   width: 100%;
+   padding: 1em 10%;
+
+   &::before {
+      content: "";
+      position: absolute;
+      @include vmin(60vmin);
+      background-color: $clr-primary_green;
+      border-radius: 50%;
+      transform: translate(25vw, 15%);
+   }
+
+   .heading-text {
+      position: relative;
+      font-size: 6vw;
+      height: 100%;
+   }
+
+   .puma {
+      position: absolute;
+      transform: translate(0, 5rem);
+   }
+
+   .thunder {
+      position: absolute;
+      transform: translate(12rem, 16rem);
+
+      &::before {
+         content: url(/images/Untitled_design__2_-removebg-preview.png);
+         position: absolute;
+         transform: scale(1.45);
+         top: -15vw;
+         left: 7vw;
+      }
+   }
+}
