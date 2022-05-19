@@ -51,6 +51,12 @@ ul {
 .nav-bar a:hover {
   color: white;
 }
+.nav-bar span {
+  cursor: pointer;
+}
+.nav-bar span:hover {
+  font-weight: bold;
+}
 .nav-bar .puma-logo {
   height: auto;
   width: 3.5rem;
@@ -113,6 +119,10 @@ ul {
   transform: scale(1.45);
   top: -18vw;
   left: 22vw;
+}
+
+.dark-mode {
+  background-color: black;
 }
 
 .overview-container {
