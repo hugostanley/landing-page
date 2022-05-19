@@ -1,0 +1,45 @@
+@use "../abstracts/" as *;
+
+.collection-container-main {
+   padding-top: 2rem;
+   background-color: $clr-primary_light;
+   h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 4rem;
+   }
+}
+.collection-container-item {
+   display: flex;
+   justify-content: space-evenly;
+   padding: 5rem 0 5rem 0;
+   h3 {
+      background-color: rgba(0, 0, 0, 0.603);
+   }
+   .collection {
+      color: $clr-primary_light;
+      font-size: 2rem;
+      background-position-x: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 35rem;
+      min-height: 35rem;
+      width: 20rem;
+
+      border-radius: 1rem;
+   }
+   .bg-spectra {
+      background-image: url(/images/spectra/kj.jpg);
+   }
+
+   .bg-desert {
+      background-image: url(/images/desert/Puma-Thunder-Desert-06.jpg);
+   }
+
+   .bg-bw {
+      background-image: url(/images/bw/212.webp);
+   }
+}

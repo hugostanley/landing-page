@@ -8,29 +8,37 @@
 // NAV BAR
 .nav-bar {
    width: 100%;
-   height: 8rem;
+   height: 5rem;
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 1em 10%;
    font-weight: 400;
    font-size: 0.8rem;
+   position: fixed;
+   z-index: 9999;
    background-color: $clr-primary_yellow;
+
+   a {
+      text-decoration: none;
+      color: black;
+      transition: all 0.3s ease;
+
+      &:hover {
+         color: white;
+      }
+   }
 
    .puma-logo {
       height: auto;
       width: 3.5rem;
+      cursor: pointer;
    }
 
    .page-links {
       display: flex;
       justify-content: space-evenly;
       flex-grow: 1;
-
-      a {
-         text-decoration: none;
-         color: black;
-      }
    }
 
    .web-links {
@@ -50,6 +58,7 @@
 
 .main {
    position: relative;
+   top: 18%;
    width: 100%;
    padding: 1em 10%;
 
@@ -63,26 +72,33 @@
    }
 
    .heading-text {
+      width: 100%;
       position: relative;
-      font-size: 6vw;
+      font-size: 7vw;
       height: 100%;
    }
 
    .puma {
-      position: absolute;
-      transform: translate(0, 5rem);
+      // position: absolute;
+      // transform: translate(0, 5rem);
+      width: 100%;
+      text-align: left;
+      transform: translateY(25%);
    }
 
    .thunder {
-      position: absolute;
-      transform: translate(12rem, 16rem);
+      // position: absolute;
+      // transform: translate(12rem, 16rem);
+      width: 100%;
+      text-align: right;
+      transform: translateY(5%);
 
       &::before {
          content: url(/images/Untitled_design__2_-removebg-preview.png);
          position: absolute;
          transform: scale(1.45);
-         top: -15vw;
-         left: 7vw;
+         top: -18vw;
+         left: 22vw;
       }
    }
 }

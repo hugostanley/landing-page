@@ -27,22 +27,22 @@
 
             <ul class="page-links">
                <li class="page-link home">
-                  <a href="#">HOME</a>
+                  <a href="#header">HOME</a>
                </li>
                <li class="page-link overview">
-                  <a href="#">OVERVIEW</a>
+                  <a href="#overview">OVERVIEW</a>
                </li>
                <li class="page-link collection">
-                  <a href="#">COLLECTION</a>
+                  <a href="#collection">COLLECTION</a>
                </li>
                <li class="page-link store">
-                  <a href="#">STORE</a>
+                  <a href="https://ph.puma.com/">STORE</a>
                </li>
             </ul>
 
-            <ul class="web-links">
+            <!-- <ul class="web-links">
                <li>
-                  <a class="web-links__item" href="#">
+                  <a class="web-links__item" href="https://www.facebook.com/PUMA/">
                      <img
                         class="facebook"
                         src="./images/icons8-facebook-30 (1).png"
@@ -51,7 +51,7 @@
                   </a>
                </li>
                <li>
-                  <a class="web-links__item" href="#">
+                  <a class="web-links__item" href="https://www.instagram.com/puma/?hl=en">
                      <img
                         class="instagram"
                         src="./images/icons8-instagram-30.png"
@@ -59,7 +59,7 @@
                      />
                   </a>
                </li>
-            </ul>
+            </ul> -->
          </nav>
 
          <div class="main">
@@ -71,36 +71,115 @@
       </header>
 
       <!-- Overview Section -->
-      <div class="overview-container">
+      <div id="overview" class="overview-container">
          <div class="overview-text">
-            <h1>Different is better</h1>
+            <h1>Thunder Spectra</h1>
             <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorem
-               in aspernatur et accusamus. Eligendi laborum reprehenderit quidem earum
-               adipisci magni. Ab eaque mollitia quis maiores quia sequi reprehenderit
-               illo.
+               The Puma Thunder Spectra is a retro-inspired lifestyle silhouette
+               originally introduced in April 2018. Featuring bold color blocking, a
+               mixture of materials from mesh to leather, and a chunky silhouette
+               perfectly in line with 2018’s immensely popular “dad shoe” trend, the
+               Thunder Spectra pushes Puma’s classic lifestyle footwear in a bold new
+               direction.
             </p>
          </div>
-         <div>
-            <video
-               id="video"
-               class="video"
-               src="./video/pumavid.mp4"
-               muted
-               loop
-               autoplay
-            ></video>
-         </div>
+
+         <video
+            id="video"
+            class="video"
+            src="./video/pumavid.mp4"
+            muted
+            loop
+            autoplay
+         ></video>
       </div>
 
       <!-- Collection Section -->
-      <div class="collection-container">
-         <div></div>
-         <div></div>
-         <div></div>
+      <div id="collection" class="collection-container-main">
+         <h1 class="clc-header">COLLECTION</h1>
+         <div class="collection-container-item">
+            <div class="collection bg-spectra">
+               <h3>Spectra</h3>
+            </div>
+            <div class="collection bg-desert">
+               <h3>Desert</h3>
+            </div>
+            <div class="collection bg-bw">
+               <h3>Black & White</h3>
+            </div>
+         </div>
       </div>
 
-      <!-- Footer Section -->
-      <footer></footer>
+      <!-- Form Section -->
+      <div class="form">
+         <form id="form">
+            <h2>Subscribe</h2>
+            <p>
+               Subscribe to keep up with fresh news and exciting releases. <br />
+               We promise not to spam you!
+            </p>
+            <div>
+               <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+               />
+
+               <button type="submit" id="submit">Subscribe Now</button>
+            </div>
+         </form>
+      </div>
+
+      <!-- Footer Section-->
+      <footer>
+         <div class="footer">
+            <div class="socials">
+               <img src="" alt="" />
+               <span>Follow us</span>
+               <div class="socials-icons">
+                  <a class="socials-icons_facebook" href="https://www.facebook.com/PUMA/"
+                     ><img src="" alt=""
+                  /></a>
+                  <a
+                     class="socials-icons_instagram"
+                     href="https://www.instagram.com/puma/?hl=en"
+                     ><img src="" alt=""
+                  /></a>
+                  <a class="socials-icons_twitter" href="https://twitter.com/PUMA"
+                     ><img src="" alt=""
+                  /></a>
+                  <a
+                     class="socials-icons_pinterest"
+                     href="https://www.pinterest.com/puma/"
+                     ><img src="" alt=""
+                  /></a>
+                  <a class="socials-icons_youtube" href="https://www.youtube.com/puma"
+                     ><img src="" alt=""
+                  /></a>
+               </div>
+            </div>
+            <div class="support">
+               <a href="">Customer Service</a>
+               <a href="">FAQ's</a>
+               <a href="">Contact Us</a>
+               <a href="">Purchase a Digital Gift Card</a>
+               <a href="">Terms & Conditions</a>
+               <a href="">Shipping and Delivery</a>
+               <a href="">Return Policy</a>
+               <a href="">Store Locator</a>
+               <a href="">Student Discount</a>
+               <a href="">Privacy Policy</a>
+            </div>
+            <div class="about">
+               <a href="">Company</a>
+               <a href="">Press Center</a>
+               <a href="">investors</a>
+               <a href="">Corporate News</a>
+               <a href="">Careers</a>
+               <a href="">Sustainability</a>
+            </div>
+         </div>
+      </footer>
    </body>
 </html>

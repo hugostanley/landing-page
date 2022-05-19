@@ -1,12 +1,22 @@
 .overview-container {
-   display: none;
-   padding: 1em 10%;
+   // display: flex;
+   position: relative;
+   padding: 3em 10%;
+
    .video {
-      width: 40rem;
-      height: auto;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      filter: brightness(30%);
    }
 
    .overview-text {
       font-size: 2rem;
+      padding: 8rem;
+      color: white;
+      text-align: center;
    }
 }
