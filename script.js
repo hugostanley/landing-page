@@ -1,7 +1,12 @@
-const icon = document.getElementById("dark");
-// icon.addEventListener("click", getDark);
+// const btn = document.getElementById("moon");
 
-icon.onclick = function () {
-   document.getElementById("header").classList.toggle("dark-mode");
-};
-// check how to change sass variables using this method. specifically the color variables.
+// btn.addEventListener("click", getDark);
+
+// function getDark() {
+//    if ((document.getElementById("header").style.backgroundColor = "rgb(249, 187, 68)")) {
+//       document.getElementById("header").style.backgroundColor = "black";
+//       document.getElementById("moon").tex;
+//    } else {
+//       document.getElementById("header").style.backgroundColor = "rgb(249, 187, 68)";
+//    }
+// }

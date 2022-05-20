@@ -4,7 +4,7 @@
    padding: 4rem;
    display: flex;
    justify-content: space-around;
-   background-color: $clr-primary_light;
+   background-color: $clr-primary_yellow;
    font-size: 0.9em;
 }
 .socials {
@@ -20,7 +20,7 @@
       height: 5rem;
    }
    .socials-icons {
-      display: flex;
+      display: none;
       justify-content: space-between;
       width: 15rem;
    }
@@ -53,11 +53,11 @@
 }
 
 .references {
-   background-color: $clr-primary_light;
-   border-top: 1px solid rgb(155, 155, 155);
+   background-color: $clr-primary_yellow;
+   border-top: 1px solid $clr-primary_light;
 
    ul {
-      width: 50%;
+      width: 100%;
       padding: 2rem;
       display: flex;
       justify-content: space-evenly;

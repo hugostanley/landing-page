@@ -1,34 +1,41 @@
 @use "../abstracts/" as *;
 
 .form {
-   height: 50rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: $clr-primary_yellow;
+   // display: flex;
+   // justify-content: center;
+   // align-items: center;
+   background-color: $clr-primary_light;
+   padding: 15% 15%;
 }
 
 form {
    background-color: $clr-primary_light;
    border-radius: 1em;
-   padding: 5rem;
+   padding: 10%;
    text-align: center;
    line-height: 1.6;
 
    h2 {
-      font-size: 3rem;
+      font-size: 4vw;
    }
 
    input,
    button {
       margin-top: 2rem;
-      font-size: 1.5em;
-      padding: 1rem;
+      font-size: 2vw;
+      padding: 5%;
       border: 1px solid #cad3db;
       border-radius: 0.5rem;
    }
 
    button {
       cursor: pointer;
+      padding-bottom: 10%;
+   }
+
+   input,
+   button {
+      height: 5vh;
+      width: 40vw;
    }
 }

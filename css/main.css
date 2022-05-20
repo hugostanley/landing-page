@@ -27,12 +27,11 @@ ul {
 #header {
   height: 100vh;
   width: 100%;
-  background-color: rgb(249, 187, 68);
 }
 
 .nav-bar {
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,55 +78,32 @@ ul {
 }
 
 .main {
-  position: relative;
-  top: 18%;
-  width: 100%;
-  padding: 1em 10%;
-}
-.main::before {
-  content: "";
-  position: absolute;
-  height: 60vmin;
-  width: 60vmin;
-  max-width: 60vmin;
-  max-height: 60vmin;
-  min-width: 60vmin;
-  min-height: 60vmin;
-  background-color: rgb(32, 105, 86);
-  border-radius: 50%;
-  transform: translate(25vw, 15%);
-}
-.main .heading-text {
-  width: 100%;
-  position: relative;
-  font-size: 7vw;
+  padding: 1rem 10vw;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main div {
+  position: absolute;
+  display: flex;
+}
+.main div img {
+  position: relative;
+  height: auto;
+  width: 50vw;
+  top: -7vw;
+}
+.main h1 {
+  font-size: 14vw;
 }
 .main .puma {
-  width: 100%;
-  text-align: left;
-  transform: translateY(25%);
+  left: 10vw;
+  align-self: flex-start;
 }
-.main .thunder {
-  width: 100%;
-  text-align: right;
-  transform: translateY(5%);
-}
-.main .thunder::before {
-  content: url(/images/Untitled_design__2_-removebg-preview.png);
-  position: absolute;
-  transform: scale(1.45);
-  top: -18vw;
-  left: 22vw;
-}
-
-.dark-mode {
-  background-color: black;
-}
-
 .overview-container {
   position: relative;
-  padding: 3em 10%;
 }
 .overview-container .video {
   position: fixed;
@@ -139,29 +115,37 @@ ul {
   filter: brightness(30%);
 }
 .overview-container .overview-text {
-  font-size: 2rem;
-  padding: 8rem;
+  font-size: 2.4vw;
+  padding: 10%;
   color: white;
   text-align: center;
 }
 
 .collection-container-main {
   padding-top: 2rem;
-  background-color: rgb(255, 244, 225);
+  background-color: rgb(249, 187, 68);
+  width: 100%;
 }
 .collection-container-main h1 {
   width: 100%;
   text-align: center;
-  font-size: 4rem;
+  font-size: 4vw;
 }
 
 .collection-container-item {
   display: flex;
   justify-content: space-evenly;
   padding: 5rem 0 5rem 0;
+  width: 100%;
 }
 .collection-container-item h3 {
-  background-color: rgba(0, 0, 0, 0.603);
+  position: relative;
+  color: black;
+  background-color: rgb(255, 244, 225);
+  border-radius: 1rem;
+  font-size: 1.5vw;
+  padding: 1rem;
+  margin: 1.7em;
 }
 .collection-container-item .collection {
   color: rgb(255, 244, 225);
@@ -170,12 +154,13 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 35rem;
-  min-height: 35rem;
-  width: 20rem;
-  border-radius: 1rem;
+  align-items: flex-end;
+  height: 50vmin;
+  width: 50vmin;
+  max-width: 50vmin;
+  max-height: 50vmin;
+  min-width: 50vmin;
+  min-height: 50vmin;
 }
 .collection-container-item .bg-spectra {
   background-image: url(/images/spectra/kj.jpg);
@@ -188,33 +173,36 @@ ul {
 }
 
 .form {
-  height: 50rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(249, 187, 68);
+  background-color: rgb(255, 244, 225);
+  padding: 15% 15%;
 }
 
 form {
   background-color: rgb(255, 244, 225);
   border-radius: 1em;
-  padding: 5rem;
+  padding: 10%;
   text-align: center;
   line-height: 1.6;
 }
 form h2 {
-  font-size: 3rem;
+  font-size: 4vw;
 }
 form input,
 form button {
   margin-top: 2rem;
-  font-size: 1.5em;
-  padding: 1rem;
+  font-size: 2vw;
+  padding: 5%;
   border: 1px solid #cad3db;
   border-radius: 0.5rem;
 }
 form button {
   cursor: pointer;
+  padding-bottom: 10%;
+}
+form input,
+form button {
+  height: 5vh;
+  width: 40vw;
 }
 
 .footer {
@@ -222,7 +210,7 @@ form button {
   padding: 4rem;
   display: flex;
   justify-content: space-around;
-  background-color: rgb(255, 244, 225);
+  background-color: rgb(249, 187, 68);
   font-size: 0.9em;
 }
 
@@ -239,7 +227,7 @@ form button {
   height: 5rem;
 }
 .socials .socials-icons {
-  display: flex;
+  display: none;
   justify-content: space-between;
   width: 15rem;
 }
@@ -269,34 +257,43 @@ form button {
 }
 
 .references {
-  background-color: rgb(255, 244, 225);
-  border-top: 1px solid rgb(155, 155, 155);
+  background-color: rgb(249, 187, 68);
+  border-top: 1px solid rgb(255, 244, 225);
 }
 .references ul {
-  width: 50%;
+  width: 100%;
   padding: 2rem;
   display: flex;
   justify-content: space-evenly;
   font-size: 0.8em;
 }
 
-.bg-spectra {
-  animation: spc;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+@media only screen and (max-width: 600px) {
+  .form input,
+.form button {
+    display: block;
+    margin: 10% auto;
+  }
 }
+@media all and (max-width: 1290px) {
+  .collection-container-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 
-@keyframes spc {
-  0% {
-    background-image: url(/images/spectra/kj.jpg);
-    background-blend-mode: darken;
+  .overview-text {
+    padding: 1rem;
   }
-  50% {
-    background-image: url(/images/spectra/7.webp);
+}
+@media all and (max-width: 1050px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
   }
-  100% {
-    background-image: url(/images/spectra/5.webp);
+  .footer .references ul {
+    width: 100%;
   }
 }
 

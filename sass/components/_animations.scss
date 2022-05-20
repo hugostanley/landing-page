@@ -1,22 +1,22 @@
-.bg-spectra {
-   animation: spc;
-   animation-duration: 7s;
-   //    animation-timing-function: ease-in-out;
-   animation-iteration-count: infinite;
-   animation-direction: alternate;
-}
+// .bg-spectra {
+//    animation: spc;
+//    animation-duration: 7s;
+//    //    animation-timing-function: ease-in-out;
+//    animation-iteration-count: infinite;
+//    animation-direction: alternate;
+// }
 
-@keyframes spc {
-   0% {
-      background-image: url(/images/spectra/kj.jpg);
-      background-blend-mode: darken;
-   }
+// @keyframes spc {
+//    0% {
+//       background-image: url(/images/spectra/kj.jpg);
+//       background-blend-mode: darken;
+//    }
 
-   50% {
-      background-image: url(/images/spectra/7.webp);
-   }
+//    50% {
+//       background-image: url(/images/spectra/7.webp);
+//    }
 
-   100% {
-      background-image: url(/images/spectra/5.webp);
-   }
-}
+//    100% {
+//       background-image: url(/images/spectra/5.webp);
+//    }
+// }
