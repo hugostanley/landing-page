@@ -219,8 +219,65 @@ form button {
 
 .footer {
   height: 20rem;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(255, 244, 225);
+  font-size: 0.9em;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+.socials span {
+  display: block;
+  text-align: left;
+}
+.socials .puma-logo_footer {
+  height: 5rem;
+}
+.socials .socials-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 15rem;
+}
+
+.support-items {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1em;
+}
+.support-items a {
+  color: black;
+  text-decoration: none;
+}
+
+.about-items {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1em;
+}
+.about-items a {
+  color: black;
+  text-decoration: none;
+}
+
+.references {
+  background-color: rgb(255, 244, 225);
+  border-top: 1px solid rgb(155, 155, 155);
+}
+.references ul {
+  width: 50%;
   padding: 2rem;
   display: flex;
+  justify-content: space-evenly;
+  font-size: 0.8em;
 }
 
 .bg-spectra {

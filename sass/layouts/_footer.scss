@@ -1,5 +1,66 @@
+@use "../abstracts/" as *;
 .footer {
    height: 20rem;
-   padding: 2rem;
+   padding: 4rem;
    display: flex;
+   justify-content: space-around;
+   background-color: $clr-primary_light;
+   font-size: 0.9em;
+}
+.socials {
+   display: flex;
+   flex-direction: column;
+   gap: 5%;
+
+   span {
+      display: block;
+      text-align: left;
+   }
+   .puma-logo_footer {
+      height: 5rem;
+   }
+   .socials-icons {
+      display: flex;
+      justify-content: space-between;
+      width: 15rem;
+   }
+}
+
+.support-items {
+   margin-top: 5%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(5, 1fr);
+   gap: 1em;
+
+   a {
+      color: black;
+      text-decoration: none;
+   }
+}
+
+.about-items {
+   margin-top: 5%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(6, 1fr);
+   gap: 1em;
+
+   a {
+      color: black;
+      text-decoration: none;
+   }
+}
+
+.references {
+   background-color: $clr-primary_light;
+   border-top: 1px solid rgb(155, 155, 155);
+
+   ul {
+      width: 50%;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 0.8em;
+   }
 }
