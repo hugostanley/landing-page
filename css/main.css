@@ -20,21 +20,27 @@ body {
 }
 
 ol,
-ul {
+ul,
+li,
+a {
   list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
 #header {
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  background-color: rgb(249, 187, 68);
 }
 
 .nav-bar {
   width: 100%;
-  height: 4rem;
+  min-height: 13vmin;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  gap: 10rem;
   padding: 1em 10%;
   font-weight: 400;
   font-size: 0.8rem;
@@ -42,12 +48,12 @@ ul {
   z-index: 9999;
   background-color: rgb(249, 187, 68);
 }
-.nav-bar a {
-  text-decoration: none;
-  color: black;
+.nav-bar a,
+.nav-bar .puma-logo {
   transition: all 0.3s ease;
 }
-.nav-bar a:hover {
+.nav-bar a:hover,
+.nav-bar .puma-logo:hover {
   color: white;
 }
 .nav-bar span {
@@ -61,29 +67,49 @@ ul {
   width: 3.5rem;
   cursor: pointer;
 }
+.nav-bar .nav-links {
+  flex: 1;
+}
 .nav-bar .page-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-grow: 1;
 }
-.nav-bar .web-links {
-  justify-content: space-evenly;
-  display: flex;
-  flex-shrink: 1;
-  width: 11rem;
+
+.toggle-button {
+  position: absolute;
+  top: 1.4rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
 }
-.nav-bar .web-links .instagram {
-  width: 2rem;
-  height: auto;
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
 }
 
 .main {
-  padding: 1rem 10vw;
-  height: 100%;
+  padding: 20%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  line-height: 0.9;
+}
+.main::before {
+  content: "";
+  position: absolute;
+  height: 35vw;
+  width: 35vw;
+  background-color: rgb(235, 224, 162);
+  border-radius: 50%;
+  transform: translate(0vw, 15%);
 }
 .main div {
   position: absolute;
@@ -93,15 +119,21 @@ ul {
   position: relative;
   height: auto;
   width: 50vw;
-  top: -7vw;
+  top: -2vw;
+  z-index: 2;
 }
 .main h1 {
   font-size: 14vw;
+  z-index: 1;
 }
 .main .puma {
-  left: 10vw;
   align-self: flex-start;
+  margin-top: 9vw;
 }
+.main .thunder {
+  align-self: flex-end;
+}
+
 .overview-container {
   position: relative;
 }
@@ -227,9 +259,12 @@ form button {
   height: 5rem;
 }
 .socials .socials-icons {
-  display: none;
+  display: flex;
   justify-content: space-between;
   width: 15rem;
+}
+.socials .socials-icons svg {
+  fill: black;
 }
 
 .support-items {
@@ -268,13 +303,6 @@ form button {
   font-size: 0.8em;
 }
 
-@media only screen and (max-width: 600px) {
-  .form input,
-.form button {
-    display: block;
-    margin: 10% auto;
-  }
-}
 @media all and (max-width: 1290px) {
   .collection-container-item {
     flex-direction: column;
@@ -292,8 +320,133 @@ form button {
     flex-direction: column;
     height: 50rem;
   }
+  .footer .socials {
+    align-items: flex-start;
+  }
   .footer .references ul {
     width: 100%;
+  }
+  .footer span,
+.footer ul {
+    align-self: flex-end;
+  }
+  .footer span {
+    margin-top: -5em;
+  }
+}
+@media all and (max-width: 768px) {
+  .form input,
+.form button {
+    display: block;
+    margin: 10% auto;
+  }
+
+  .overview-text h1,
+.overview-text p {
+    text-align: left;
+    line-height: 1.8;
+  }
+
+  .socials {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    align-self: center;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .page-links {
+    margin: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+    align-self: center;
+    align-items: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  #header,
+.nav-bar,
+#collection {
+    background-color: black;
+    color: rgb(249, 187, 68);
+  }
+
+  #bar {
+    background-color: rgb(249, 187, 68);
+  }
+
+  #nav-list {
+    color: rgb(249, 187, 68);
+  }
+
+  .overview-text h1,
+.overview-text p {
+    color: rgb(249, 187, 68);
+  }
+
+  .collection h3 {
+    color: rgb(249, 187, 68);
+    background-color: rgb(235, 224, 162);
+  }
+
+  .form {
+    background-color: rgb(249, 187, 68);
+  }
+
+  form {
+    background-color: rgb(235, 224, 162);
+  }
+
+  footer span {
+    color: rgb(249, 187, 68);
+  }
+  footer .puma-logo {
+    color: rgb(249, 187, 68);
+    fill: rgb(249, 187, 68);
+  }
+
+  #footer-icons {
+    fill: rgb(249, 187, 68);
+  }
+
+  .support h2 {
+    color: rgb(249, 187, 68);
+  }
+
+  .support-items a {
+    color: rgb(249, 187, 68);
+  }
+
+  .about h2,
+.about a {
+    color: rgb(249, 187, 68);
+  }
+
+  .references {
+    background-color: black;
+  }
+  .references li {
+    color: rgb(249, 187, 68);
+  }
+
+  .footer {
+    background-color: black;
   }
 }
 

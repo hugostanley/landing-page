@@ -20,9 +20,13 @@
       height: 5rem;
    }
    .socials-icons {
-      display: none;
+      display: flex;
       justify-content: space-between;
       width: 15rem;
+
+      svg {
+         fill: black;
+      }
    }
 }
 

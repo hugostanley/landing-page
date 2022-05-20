@@ -1,18 +1,20 @@
 @use "../abstracts/" as *;
 
 #header {
-   height: 100vh;
+   height: 100%;
    width: 100%;
+   background-color: $clr-primary_yellow;
 }
 
 // NAV BAR
 
 .nav-bar {
    width: 100%;
-   height: 4rem;
+   min-height: 13vmin;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
+   gap: 10rem;
    padding: 1em 10%;
    font-weight: 400;
    font-size: 0.8rem;
@@ -20,11 +22,9 @@
    z-index: 9999;
    background-color: $clr-primary_yellow;
 
-   a {
-      text-decoration: none;
-      color: black;
+   a,
+   .puma-logo {
       transition: all 0.3s ease;
-
       &:hover {
          color: white;
       }
@@ -32,7 +32,6 @@
 
    span {
       cursor: pointer;
-
       &:hover {
          font-weight: bold;
       }
@@ -43,82 +42,56 @@
       width: 3.5rem;
       cursor: pointer;
    }
+   .nav-links {
+      flex: 1;
+   }
 
    .page-links {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
       flex-grow: 1;
    }
+}
 
-   .web-links {
-      justify-content: space-evenly;
-      display: flex;
-      flex-shrink: 1;
-      width: 11rem;
+.toggle-button {
+   position: absolute;
+   top: 1.4rem;
+   right: 2rem;
+   display: none;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 31px;
+   height: 21px;
 
-      .instagram {
-         width: 2rem;
-         height: auto;
-      }
+   .bar {
+      height: 3px;
+      width: 100%;
+      background-color: black;
+      border-radius: 10px;
    }
 }
 
 // HEADER MAIN CONTENT
 
-// .main {
-//    position: relative;
-//    top: 18%;
-//    width: 100%;
-//    padding: 1em 10%;
-
-//    &::before {
-//       content: "";
-//       position: absolute;
-//       @include vmin(60vmin);
-//       background-color: $clr-primary_green;
-//       border-radius: 50%;
-//       transform: translate(25vw, 15%);
-//    }
-
-//    .heading-text {
-//       width: 100%;
-//       position: relative;
-//       font-size: 7vw;
-//       height: 100%;
-//    }
-
-//    .puma {
-//       // position: absolute;
-//       // transform: translate(0, 5rem);
-//       width: 100%;
-//       text-align: left;
-//       transform: translateY(25%);
-//    }
-
-//    .thunder {
-//       // position: absolute;
-//       // transform: translate(12rem, 16rem);
-//       width: 100%;
-//       text-align: right;
-//       transform: translateY(5%);
-
-//       &::before {
-//          content: url(/images/Untitled_design__2_-removebg-preview.png);
-//          position: absolute;
-//          transform: scale(1.45);
-//          top: -18vw;
-//          left: 22vw;
-//       }
-//    }
-// }
-
 .main {
-   padding: 1rem 10vw;
-   height: 100%;
+   padding: 20%;
+   height: 100vh;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   line-height: 0.9;
+
+   &::before {
+      content: "";
+      position: absolute;
+      height: 35vw;
+      width: 35vw;
+
+      background-color: $clr-secondary_yellow;
+      border-radius: 50%;
+      transform: translate(0vw, 15%);
+   }
 
    div {
       position: absolute;
@@ -128,25 +101,22 @@
          position: relative;
          height: auto;
          width: 50vw;
-         top: -7vw;
+         top: -2vw;
+         z-index: 2;
       }
    }
 
    h1 {
       font-size: 14vw;
+      z-index: 1;
    }
 
    .puma {
-      //    position: absolute;
-      left: 10vw;
       align-self: flex-start;
+      margin-top: 9vw;
    }
 
    .thunder {
-      // position: absolute;
-      // transform: translate(12rem, 16rem);
-      // width: 100%;
-      // text-align: right;
-      // transform: translateY(5%);
+      align-self: flex-end;
    }
 }
