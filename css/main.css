@@ -78,6 +78,10 @@ a {
   justify-content: space-between;
 }
 
+.jc--se {
+  justify-content: space-evenly;
+}
+
 /* Align items */
 .ai--fs {
   align-items: flex-start;
@@ -102,6 +106,10 @@ a {
 
 .as--c {
   align-self: center;
+}
+
+.fw--w {
+  flex-wrap: wrap;
 }
 
 #header {
@@ -144,8 +152,6 @@ a {
   flex: 1;
 }
 .nav-bar .page-links {
-  display: flex;
-  justify-content: space-around;
   flex-grow: 1;
 }
 
@@ -169,10 +175,6 @@ a {
 .main {
   padding: 20%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   line-height: 0.9;
 }
 .main::before {
@@ -189,7 +191,6 @@ a {
   z-index: 1;
 }
 .main .puma {
-  align-self: flex-start;
   margin-top: 9vw;
   margin-left: -15%;
 }
@@ -198,9 +199,6 @@ a {
 }
 .main div {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .main div img {
   position: relative;
@@ -245,8 +243,6 @@ a {
 }
 
 .collection-container-item {
-  display: flex;
-  justify-content: space-evenly;
   padding: 5rem 0 5rem 0;
   width: 100%;
 }
@@ -265,8 +261,6 @@ a {
   background-position-x: 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: flex-end;
   height: 50vmin;
   width: 50vmin;
   max-width: 50vmin;
@@ -300,10 +294,6 @@ form h2 {
 }
 form .input-btn {
   margin-top: 5%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 form input {
   padding: 2%;
@@ -328,18 +318,14 @@ form button:hover {
   background-color: rgb(235, 224, 162);
 }
 
-.footer {
+.footer-upper {
   height: 20rem;
   padding: 4rem;
-  display: flex;
-  justify-content: space-around;
   background-color: rgb(249, 187, 68);
   font-size: 0.9em;
 }
 
 .socials {
-  display: flex;
-  flex-direction: column;
   gap: 5%;
 }
 .socials span {
@@ -350,8 +336,6 @@ form button:hover {
   height: 5rem;
 }
 .socials .socials-icons {
-  display: flex;
-  justify-content: space-between;
   width: 15rem;
 }
 .socials .socials-icons svg {
@@ -389,10 +373,7 @@ form button:hover {
 .references ul {
   width: 100%;
   padding: 2rem;
-  display: flex;
-  flex-wrap: wrap;
   gap: 1em;
-  justify-content: space-evenly;
   font-size: 0.8em;
 }
 
@@ -408,22 +389,22 @@ form button:hover {
   }
 }
 @media all and (max-width: 1050px) {
-  .footer {
+  .footer-upper {
     display: flex;
     flex-direction: column;
     height: 50rem;
   }
-  .footer .socials {
+  .footer-upper .socials {
     align-items: flex-start;
   }
-  .footer .references ul {
+  .footer-upper .references ul {
     width: 100%;
   }
-  .footer span,
-.footer ul {
+  .footer-upper span,
+.footer-upper ul {
     align-self: flex-end;
   }
-  .footer span {
+  .footer-upper span {
     margin-top: -5em;
   }
 }
@@ -541,7 +522,7 @@ form button:hover {
     color: rgb(249, 187, 68);
   }
 
-  .footer {
+  .footer-upper {
     background-color: black;
   }
 }

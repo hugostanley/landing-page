@@ -1,15 +1,12 @@
 @use "../abstracts/" as *;
-.footer {
+.footer-upper {
    height: 20rem;
    padding: 4rem;
-   display: flex;
-   justify-content: space-around;
+
    background-color: $clr-primary_yellow;
    font-size: 0.9em;
 }
 .socials {
-   display: flex;
-   flex-direction: column;
    gap: 5%;
 
    span {
@@ -20,8 +17,6 @@
       height: 5rem;
    }
    .socials-icons {
-      display: flex;
-      justify-content: space-between;
       width: 15rem;
 
       svg {
@@ -63,10 +58,7 @@
    ul {
       width: 100%;
       padding: 2rem;
-      display: flex;
-      flex-wrap: wrap;
       gap: 1em;
-      justify-content: space-evenly;
       font-size: 0.8em;
    }
 }

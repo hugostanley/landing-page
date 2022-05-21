@@ -11,8 +11,6 @@
    }
 }
 .collection-container-item {
-   display: flex;
-   justify-content: space-evenly;
    padding: 5rem 0 5rem 0;
    width: 100%;
 
@@ -31,8 +29,6 @@
       background-position-x: 50%;
       background-size: cover;
       background-repeat: no-repeat;
-      display: flex;
-      align-items: flex-end;
 
       @include vmin(50vmin);
    }

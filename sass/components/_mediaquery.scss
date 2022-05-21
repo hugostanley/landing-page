@@ -13,7 +13,7 @@
 }
 
 @media all and (max-width: 1050px) {
-   .footer {
+   .footer-upper {
       display: flex;
       flex-direction: column;
       height: 50rem;
@@ -163,7 +163,7 @@
          color: $clr-primary_yellow;
       }
    }
-   .footer {
+   .footer-upper {
       background-color: black;
    }
 }

@@ -41,6 +41,9 @@
 .jc--sb {
    justify-content: space-between;
 }
+.jc--se {
+   justify-content: space-evenly;
+}
 
 /* Align items */
 .ai--fs {
@@ -65,4 +68,8 @@
 
 .as--c {
    align-self: center;
+}
+
+.fw--w {
+   flex-wrap: wrap;
 }
