@@ -74,3 +74,17 @@ body {
 p {
    font-size: 2vw;
 }
+
+@media (prefers-color-scheme: dark) {
+   .container-one {
+      background-color: black;
+   }
+
+   .nav-bar {
+      background-color: rgb(249, 187, 68);
+   }
+
+   .thank-con {
+      background-color: rgb(249, 187, 68);
+   }
+}
