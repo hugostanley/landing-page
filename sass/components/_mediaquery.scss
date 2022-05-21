@@ -116,6 +116,15 @@
 
    .form {
       background-color: $clr-primary_yellow;
+
+      h2 {
+         font-size: 2em;
+      }
+
+      h2,
+      p {
+         text-align: left;
+      }
    }
 
    form {
