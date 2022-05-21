@@ -1,5 +1,7 @@
 # Product Landing Page project
 
+This project focused on creating a properly and responsively designed landing page.
+
 ## Tech Stack
 
 -- Sass
