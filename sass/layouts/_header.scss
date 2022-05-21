@@ -11,9 +11,7 @@
 .nav-bar {
    width: 100%;
    min-height: 13vmin;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
+
    gap: 10rem;
    padding: 1em 10%;
    font-weight: 400;
@@ -93,19 +91,6 @@
       transform: translate(0vw, 15%);
    }
 
-   div {
-      position: absolute;
-      display: flex;
-
-      img {
-         position: relative;
-         height: auto;
-         width: 50vw;
-         top: -2vw;
-         z-index: 2;
-      }
-   }
-
    h1 {
       font-size: 14vw;
       z-index: 1;
@@ -114,9 +99,30 @@
    .puma {
       align-self: flex-start;
       margin-top: 9vw;
+      margin-left: -15%;
    }
 
    .thunder {
-      align-self: flex-end;
+      margin-left: 10%;
+   }
+
+   div {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+         position: relative;
+         height: auto;
+         width: 50vw;
+         top: -2vw;
+         z-index: 2;
+      }
+
+      h1 {
+         font-size: 14vw;
+         z-index: 1;
+      }
    }
 }

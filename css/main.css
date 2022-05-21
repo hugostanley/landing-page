@@ -28,8 +28,80 @@ a {
   color: black;
 }
 
-.flex {
+/* Display Flex */
+.d--f {
   display: flex;
+}
+
+/* Center All */
+.f--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Flex direction */
+.fd--r {
+  flex-direction: row;
+}
+
+.fd--rr {
+  flex-direction: row-reverse;
+}
+
+.fd--c {
+  flex-direction: column;
+}
+
+.fd--cr {
+  flex-direction: column-reverse;
+}
+
+/* Justify content */
+.jc--fe {
+  justify-content: flex-end;
+}
+
+.jc--fs {
+  justify-content: flex-start;
+}
+
+.jc--c {
+  justify-content: center;
+}
+
+.jc--sa {
+  justify-content: space-around;
+}
+
+.jc--sb {
+  justify-content: space-between;
+}
+
+/* Align items */
+.ai--fs {
+  align-items: flex-start;
+}
+
+.ai--c {
+  align-items: center;
+}
+
+.ai--fe {
+  align-items: flex-end;
+}
+
+/* Align Self */
+.as--fs {
+  align-self: flex-start;
+}
+
+.as--fe {
+  align-self: flex-end;
+}
+
+.as--c {
+  align-self: center;
 }
 
 #header {
@@ -41,9 +113,6 @@ a {
 .nav-bar {
   width: 100%;
   min-height: 13vmin;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   gap: 10rem;
   padding: 1em 10%;
   font-weight: 400;
@@ -115,9 +184,23 @@ a {
   border-radius: 50%;
   transform: translate(0vw, 15%);
 }
+.main h1 {
+  font-size: 14vw;
+  z-index: 1;
+}
+.main .puma {
+  align-self: flex-start;
+  margin-top: 9vw;
+  margin-left: -15%;
+}
+.main .thunder {
+  margin-left: 10%;
+}
 .main div {
   position: absolute;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main div img {
   position: relative;
@@ -126,16 +209,9 @@ a {
   top: -2vw;
   z-index: 2;
 }
-.main h1 {
+.main div h1 {
   font-size: 14vw;
   z-index: 1;
-}
-.main .puma {
-  align-self: flex-start;
-  margin-top: 9vw;
-}
-.main .thunder {
-  align-self: flex-end;
 }
 
 .overview-container {

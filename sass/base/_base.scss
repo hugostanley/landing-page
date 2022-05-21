@@ -1,0 +1,68 @@
+/* Display Flex */
+.d--f {
+   display: flex;
+}
+
+/* Center All */
+
+.f--center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* Flex direction */
+.fd--r {
+   flex-direction: row;
+}
+.fd--rr {
+   flex-direction: row-reverse;
+}
+.fd--c {
+   flex-direction: column;
+}
+.fd--cr {
+   flex-direction: column-reverse;
+}
+
+/* Justify content */
+.jc--fe {
+   justify-content: flex-end;
+}
+.jc--fs {
+   justify-content: flex-start;
+}
+.jc--c {
+   justify-content: center;
+}
+.jc--sa {
+   justify-content: space-around;
+}
+.jc--sb {
+   justify-content: space-between;
+}
+
+/* Align items */
+.ai--fs {
+   align-items: flex-start;
+}
+.ai--c {
+   align-items: center;
+}
+.ai--fe {
+   align-items: flex-end;
+}
+
+/* Align Self */
+
+.as--fs {
+   align-self: flex-start;
+}
+
+.as--fe {
+   align-self: flex-end;
+}
+
+.as--c {
+   align-self: center;
+}

@@ -8,4 +8,4 @@
 
 ## Live Demo
 
-["label"](link itself)
+["Puma Thunder"](https://hugostanley.github.io/landing-page/)
