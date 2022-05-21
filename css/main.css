@@ -328,6 +328,7 @@ form button:hover {
 
 .socials {
   gap: 5%;
+  flex-wrap: wrap;
 }
 .socials span {
   display: block;
@@ -406,7 +407,7 @@ form button:hover {
     align-self: flex-end;
   }
   .footer-upper span {
-    margin-top: -5em;
+    display: none;
   }
 }
 @media all and (max-width: 768px) {
@@ -532,6 +533,26 @@ form button:hover {
 
   .footer-upper {
     background-color: black;
+  }
+}
+@media all and (max-width: 320px) {
+  .footer-upper {
+    padding-top: 13rem;
+  }
+  .footer-upper .socials {
+    margin-bottom: 2rem;
+  }
+
+  #form h2 {
+    font-size: 2em;
+  }
+  #form h2,
+#form p {
+    text-align: left;
+  }
+
+  .socials {
+    justify-content: center;
   }
 }
 

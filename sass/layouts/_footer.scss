@@ -8,6 +8,7 @@
 }
 .socials {
    gap: 5%;
+   flex-wrap: wrap;
 
    span {
       display: block;

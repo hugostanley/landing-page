@@ -30,7 +30,7 @@
          align-self: flex-end;
       }
       span {
-         margin-top: -5em;
+         display: none;
       }
    }
 }
@@ -175,5 +175,29 @@
    }
    .footer-upper {
       background-color: black;
+   }
+}
+
+@media all and (max-width: 320px) {
+   .footer-upper {
+      padding-top: 13rem;
+
+      .socials {
+         margin-bottom: 2rem;
+      }
+   }
+
+   #form {
+      h2 {
+         font-size: 2em;
+      }
+      h2,
+      p {
+         text-align: left;
+      }
+   }
+
+   .socials {
+      justify-content: center;
    }
 }
