@@ -28,6 +28,10 @@ a {
   color: black;
 }
 
+.flex {
+  display: flex;
+}
+
 #header {
   height: 100%;
   width: 100%;
@@ -211,7 +215,6 @@ a {
 
 form {
   background-color: rgb(255, 244, 225);
-  border-radius: 1em;
   padding: 10%;
   text-align: center;
   line-height: 1.6;
@@ -219,22 +222,34 @@ form {
 form h2 {
   font-size: 4vw;
 }
-form input,
-form button {
-  margin-top: 2rem;
-  font-size: 2vw;
-  padding: 5%;
-  border: 1px solid #cad3db;
-  border-radius: 0.5rem;
+form .input-btn {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+form input {
+  padding: 2%;
+  border-style: hidden;
+  border-bottom: 1px solid black;
+  background-color: rgb(255, 244, 225);
+  text-align: left;
+}
+form input:focus {
+  outline: none;
 }
 form button {
+  padding: 2%;
+  border-style: none;
+  border-radius: 3em;
+  background-color: rgb(249, 187, 68);
   cursor: pointer;
-  padding-bottom: 10%;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
-form input,
-form button {
-  height: 5vh;
-  width: 40vw;
+form button:hover {
+  background-color: rgb(235, 224, 162);
 }
 
 .footer {
@@ -299,6 +314,8 @@ form button {
   width: 100%;
   padding: 2rem;
   display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
   justify-content: space-evenly;
   font-size: 0.8em;
 }
@@ -410,6 +427,9 @@ form button {
   }
 
   form {
+    background-color: rgb(235, 224, 162);
+  }
+  form input {
     background-color: rgb(235, 224, 162);
   }
 
