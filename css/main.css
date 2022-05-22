@@ -270,13 +270,13 @@ a {
   min-height: 50vmin;
 }
 .collection-container-item .bg-spectra {
-  background-image: url(/images/spectra/kj.jpg);
+  background-image: url(/landing-page/images/spectra/kj.jpg);
 }
 .collection-container-item .bg-desert {
-  background-image: url(/images/desert/Puma-Thunder-Desert-06.jpg);
+  background-image: url(/landing-page/images/desert/Puma-Thunder-Desert-06.jpg);
 }
 .collection-container-item .bg-bw {
-  background-image: url(/images/bw/212.webp);
+  background-image: url(/landing-page/images/bw/212.webp);
 }
 
 .form {
