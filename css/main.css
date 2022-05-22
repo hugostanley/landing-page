@@ -487,10 +487,6 @@ form button:hover {
   .form h2 {
     font-size: 2em;
   }
-  .form h2,
-.form p {
-    text-align: left;
-  }
 
   form {
     background-color: rgb(235, 224, 162);
@@ -553,6 +549,13 @@ form button:hover {
 
   .socials {
     justify-content: center;
+  }
+
+  .overview-text h1 {
+    font-size: 4em;
+  }
+  .overview-text p {
+    font-size: 2em;
   }
 }
 

@@ -11,3 +11,5 @@ This project focused on creating a properly and responsively designed landing pa
 ## Live Demo
 
 ["Puma Thunder"](https://hugostanley.github.io/landing-page/)
+
+> Dark mode can be toggled through your device's preferences setting.
